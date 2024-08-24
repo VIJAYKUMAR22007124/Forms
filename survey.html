@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<link rel="icon" href="./Images/survey.jpeg">
+<body>
+    <header style="background-color: gray; text-align: center; padding: 10px;">
+        <h1 >Customer Satisfaction Survey</h1>
+    </header>
+    <br><br><br>
+    <form>
+        <table align="center" border="0" cellspacing="0" cellpadding="10">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age" min="18"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>How satisfied are you with our product?</td>
+                <td>
+                    <select name="satisfaction">
+                        <option value="very_satisfied">Very Satisfied</option>
+                        <option value="satisfied">Satisfied</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="very_dissatisfied">Very Dissatisfied</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments:</td>
+                <td><textarea name="comments" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <center><strong><b><input type="submit" value="Submit" ></b></strong></center>
+    </form>
+    <br><br><br>
+    
+</body>
+</html>

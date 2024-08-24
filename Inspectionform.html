@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Form</title>
+</head>
+<body>
+<fieldset>
+    <header >
+        <center>
+                <h1 >Inspection Form</h1>
+        <p >Please fill out the form below to complete your inspection.</p>
+    </center>
+    </header>
+<br>
+    <form action="/submit-inspection" method="post">
+        <table align="center" cellpadding="10">
+            <tr>
+                <td><label for="inspector-name">Inspector Name:</label></td>
+                <td><input type="text" id="inspector-name" name="inspector-name" required></td>
+            </tr>
+            <tr>
+                <td><label for="inspection-date">Date of Inspection:</label></td>
+                <td><input type="date" id="inspection-date" name="inspection-date" required></td>
+            </tr>
+            <tr>
+                <td><label for="location">Location:</label></td>
+                <td><input type="text" id="location" name="location" required></td>
+            </tr>
+            <tr>
+                <td><label for="inspection-type">Type of Inspection:</label></td>
+                <td>
+                    <select id="inspection-type" name="inspection-type" required>
+                        <option value="safety">Safety Inspection</option>
+                        <option value="quality">Quality Inspection</option>
+                        <option value="environmental">Environmental Inspection</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="findings">Findings:</label></td>
+                <td><textarea id="findings" name="findings" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="recommendations">Recommendations:</label></td>
+                <td><textarea id="recommendations" name="recommendations" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="Center" ><input type="submit" value="Submit Inspection"></td>
+            </tr>
+        </table>
+    </form>
+<br>
+    
+</fieldset>
+</body>
+</html>

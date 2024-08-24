@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+</head>
+<body>
+    <table bgcolor="lightgrey" width="100%">
+        <tr>
+            <td align="center">
+                <h1>DOCTOR APPOINTMENT</h1>
+                <h2>ONLINE</h2>
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+
+    <!-- Wrap the form around the entire table -->
+    <form>
+        <table align="center" border="2" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center"><h3>Appointment Details</h3></td>
+            </tr>
+            <tr>
+                <td>Patient Name</td>
+                <td><input type="text" name="patientname" placeholder="Name"></td>
+            </tr>
+            <tr>
+                <td>Patient Age</td>
+                <td><input type="number" name="patientage" placeholder="Age eg. 20"></td>
+            </tr>
+            <tr>
+                <td>Patient's Gender</td>
+                <td>
+                    <input type="radio" name="patient_gender" value="male">Male<br>
+                    <input type="radio" name="patient_gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Doctor Preference</td>
+                <td>
+                    <input type="radio" name="doctor_gender" value="male">Male<br>
+                    <input type="radio" name="doctor_gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Appointment</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Time of Appointment</td>
+                <td><input type="time" name="time"></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" name="Submit"></td>
+                <td align="center"><input type="reset" name="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+    <br><br>
+
+    <table bgcolor="grey" align="center" width="100%">
+        <tr>
+            <td align="center">
+                <h4>For any query</h4>
+                <p>Contact 789456120</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

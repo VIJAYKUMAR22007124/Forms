@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Application Form</title>
+</head>
+<body>
+    <table bgcolor="lightgrey" width="100%">
+        <tr>
+            <td align="center">
+                <h1>PAN Card</h1>
+                <h2>ONLINE APPLICATION</h2>
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+
+    
+    <form>
+        <table align="center" border="1" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center"><h2>PAN Card Application Form</h2></td>
+            </tr>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="text" name="mobile"></td>
+            </tr>
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Proof of Identity:</td>
+                <td>
+                    <input type="radio" name="identity_proof" value="passport"> Passport<br>
+                    <input type="radio" name="identity_proof" value="voter_id"> Voter ID<br>
+                    <input type="radio" name="identity_proof" value="aadhar_card"> Aadhar Card<br>
+                    <input type="radio" name="identity_proof" value="driving_license"> Driving License
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Submit">
+                </td>
+                <td align="center">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br><br>
+
+    <table bgcolor="grey" align="center" width="100%">
+        <tr>
+            <td align="center">
+                <h4>For any query</h4>
+                <p>Contact 789456120</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

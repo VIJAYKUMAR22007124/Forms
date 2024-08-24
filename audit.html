@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Form</title>
+</head>
+<body>
+    <fieldset>
+    <h1>Audit Form</h1>
+    <form action="/submit-audit" method="post">
+        <label for="auditor-name">Auditor Name:</label><br>
+        <input type="text" id="auditor-name" name="auditor-name" required><br><br>
+
+        <label for="audit-date">Audit Date:</label><br>
+        <input type="date" id="audit-date" name="audit-date" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="findings">Findings:</label><br>
+        <textarea id="findings" name="findings" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="recommendations">Recommendations:</label><br>
+        <textarea id="recommendations" name="recommendations" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="status">Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+            <option value="not started">Not Started</option>
+        </select><br><br>
+
+        <label for="auditor-signature">Auditor Signature:</label><br>
+        <input type="text" id="auditor-signature" name="auditor-signature" required><br><br>
+
+        <input type="submit" value="Submit Audit">
+    </form>
+</fieldset>
+</body>
+</html>

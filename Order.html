@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+<!-- Header Section -->
+<table width="100%" border="0" cellpadding="8" cellspacing="5" align="center">
+    <tr>
+        <td align="center" bgcolor="rgb(8, 202, 47)" >
+            <h1>Order Form</h1>
+        </td>
+    </tr>
+</table>
+<br>
+<form action="/submit-order" method="POST">
+    <table border="2" cellpadding="15" cellspacing="0" align="center">
+        <tr>
+            <th colspan="2">Product Information</th>
+        </tr>
+        <tr>
+            <td><label for="product">Select Product:</label></td>
+            <td>
+                <select id="product" name="product" required>
+                    <option value="product1">Product 1 - $10.00</option>
+                    <option value="product2">Product 2 - $15.00</option>
+                    <option value="product3">Product 3 - $20.00</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="quantity">Quantity:</label></td>
+            <td><input type="number" id="quantity" name="quantity" min="1" required></td>
+        </tr>
+        <tr>
+            <th colspan="2">Customer Information</th>
+        </tr>
+        <tr>
+            <td><label for="name">Your Name:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Your Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Shipping Address:</label></td>
+            <td><textarea id="address" name="address" rows="4" required></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Place Order">
+            </td>
+        </tr>
+    </table>
+</form>
+<!-- Footer Section -->
+<table width="100%" border="0" cellpadding="8" cellspacing="15" align="center">
+    <tr>
+        <td align="center" >
+            <p>&copy; 2024 Order now. All rights reserved.</p>
+            <p>For assistance, contact support@example.com</p>
+        </td>
+        
+    </tr>
+</table>
+<br><br>
+</body>
+</html>

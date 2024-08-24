@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<link rel="icon" href="20944444.jpg">
+
+<body bgcolor="lightblue">
+
+    <header >
+        <h1 >Welcome to Our Event Registration</h1>
+    </header>
+
+    <h2 >Register for an Event</h2>
+
+    <form action="/submit_registration" method="post" >
+        <table border="0" cellpadding="8" cellspacing="15">
+            <tr>
+                <td><label for="first_name">First Name:❗</label></td>
+                <td><input type="text" id="first_name" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:❗</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="event">Select Event:</label></td>
+                <td>
+                    <select id="event" name="event">
+                        <option value="">Select an Event</option>
+                        <option value="conference">Conference</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="webinar">Webinar</option>
+                        <option value="webinar">Seminar</option>
+                        <option value="webinar">Art Gallery</option>
+                        <option value="webinar">Cooking </option>
+                        <option value="webinar">Volunteer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Additional Comments:</label></td>
+                <td><textarea id="comments" name="comments" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="submit" value="Register">
+                </td>
+                <td >
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <footer >
+        <p >&copy; 2024 Event Registration. All rights reserved.</p>
+        <p><a href="mailto:support@eventregistration.com">Contact us</a></p>
+    </footer>
+
+</body>
+</html>
